@@ -1,4 +1,4 @@
-# Clinical Case Intake
+# Medintake
 
 Machine learning-assisted platform for patient intake, case categorization/routing and clinical workflow support.
 
@@ -26,7 +26,7 @@ This project introduces more recent concepts as modern Neural Nets, transformers
 ## Project Structure
 
 ```text
-clinical-case-intake/
+medintake/
 ├── datasets/
 ├── models/
 ├── notebooks/
@@ -38,8 +38,8 @@ clinical-case-intake/
 ## Setup
 
 ```bash
-git clone https://github.com/cestdove/clinical-case-intake.git
-cd clinical-case-intake
+git clone https://github.com/cestdove/medintake.git
+cd medintake
 
 pip install -r requirements.txt
 ```

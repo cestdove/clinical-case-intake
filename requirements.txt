@@ -6,3 +6,8 @@ joblib
 matplotlib
 seaborn
 datasets
+transformers
+torch
+jupyter
+ipykernel
+ipywidgets
