@@ -4,11 +4,13 @@ Machine learning-assisted platform for patient intake, case categorization/routi
 
 This project evolves [PW_Triage_ML](https://github.com/cestdove/PW_Triage_ML), my previous thesis project exploring Support Vector Machines for ticket triage and text classification.
 
+## Dataset
+
 The model takes a short clinical-case description as input and predicts a numerical label representing one of five broad medical-condition categories.
 
-The project uses the public *Medical Abstracts Text Classification Dataset*, available on Hugging Face and created by Tim Schopf, Daniel Braun, and Florian Matthes. The dataset consists of English medical abstracts rather than real patient tickets or clinical records.
+The project uses the public *\*Medical Abstracts Text Classification Dataset\**, available on Hugging Face and created by Tim Schopf, Daniel Braun, and Florian Matthes. The dataset consists of English medical abstracts rather than real patient tickets or clinical records.
 
-The label used in particular are distingued as: 
+The label used in particular are distingued as:&#x20;  
 | Label | Category | Original Train | Original Test |
 |---:|---|---:|---:|
 | 1 | Neoplasms | 2.530 | 633 |
@@ -17,5 +19,35 @@ The label used in particular are distingued as:
 | 4 | Cardiovascular diseases | 2.441 | 610 |
 | 5 | General pathological conditions | 3.844 | 961 |
 
+## Approach
 
-This project introduces more recent concepts as modern Neural Nets, transformers, and new NLP techniques like a BERT model being fine-tuned.  
+This project introduces more recent concepts as modern Neural Nets, transformers, and new NLP techniques like a BERT model being fine-tuned. &#x20;
+
+## Project Structure
+
+```text
+clinical-case-intake/
+├── datasets/
+├── models/
+├── notebooks/
+├── src/
+├── README.md
+└── requirements.txt
+```
+
+## Setup
+
+```bash
+git clone [https://github.com/cestdove/clinical-case-intake.git](https://github.com/cestdove/clinical-case-intake.git)
+cd clinical-case-intake
+
+pip install -r requirements.txt
+```
+
+To train the model:
+
+```bash
+python src/train\_model.py
+```
+
+The trained model and TF-IDF vectorizer are saved in the `models/` directory.
