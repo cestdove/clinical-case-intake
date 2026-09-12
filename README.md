@@ -43,6 +43,11 @@ cd clinical-case-intake
 
 pip install -r requirements.txt
 ```
+To download and prepare the dataset:
+
+```bash
+python src/download_dataset.py
+```
 
 To train the model:
 
@@ -51,3 +56,7 @@ python src/train_model.py
 ```
 
 The trained model and TF-IDF vectorizer are saved in the `models/` directory.
+
+## Notebooks
+
+The `notebooks/` directory contains exploratory analysis and model evaluation notebooks, including error analysis and model interpretability.
