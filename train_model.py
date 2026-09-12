@@ -35,7 +35,7 @@ model = LinearSVC()
 model.fit(X_train_vec, y_train)
 
 
-# evalutation 
+# evalutation -------------------------
 predictions = model.predict(X_test_vec)
 
 print("\nAccuracy: ")
@@ -43,6 +43,40 @@ print(accuracy_score(y_test, predictions))
 
 print("\nClassification Report:\n")
 print(classification_report(y_test, predictions))
+
+# adding a confusion matrix 
+from sklearn.metrics import confusion_matrix
+import seaborn as sns 
+import matplotlib.pyplot as plt 
+
+cm = confusion_matrix(y_test, predictions)
+print(f"Confusion Matrix: \n {cm}") # just printing the raw one 
+
+# labels for graphical comfort 
+labels = [
+    "1 \n Neoplasms",
+    "2 \n Digestive",
+    "3 \n Nervous",
+    "4 \n Cardiovascular",
+    "5 \n General"
+]
+
+plt.figure(figsize=(11, 8)) # resizing it because of long text labels
+sns.heatmap(
+    cm,
+    annot=True,
+    fmt="d",
+    cmap="Blues",
+    xticklabels=labels,
+    yticklabels=labels
+)
+
+plt.xlabel("Predicted", fontweight="bold", fontsize=12)
+plt.ylabel("Actual", fontweight="bold", fontsize=12)
+plt.title("Confusion Matrix", fontweight="bold", fontsize=16)
+plt.show()
+
+# -------------------------------------
 
 
 # saving the model into the dir 
