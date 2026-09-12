@@ -9,7 +9,7 @@ The model takes a short clinical-case description as input and predicts a numeri
 The project uses the public *Medical Abstracts Text Classification Dataset*, available on Hugging Face and created by Tim Schopf, Daniel Braun, and Florian Matthes. The dataset consists of English medical abstracts rather than real patient tickets or clinical records.
 
 The label used in particular are distingued as: 
-| Etichetta | Categoria | Train originale | Test originale |
+| Label | Category | Original Train | Original Test |
 |---:|---|---:|---:|
 | 1 | Neoplasms | 2.530 | 633 |
 | 2 | Digestive system diseases | 1.195 | 299 |
