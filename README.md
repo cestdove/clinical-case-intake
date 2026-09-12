@@ -38,7 +38,7 @@ clinical-case-intake/
 ## Setup
 
 ```bash
-git clone [https://github.com/cestdove/clinical-case-intake.git](https://github.com/cestdove/clinical-case-intake.git)
+git clone https://github.com/cestdove/clinical-case-intake.git
 cd clinical-case-intake
 
 pip install -r requirements.txt
@@ -47,7 +47,7 @@ pip install -r requirements.txt
 To train the model:
 
 ```bash
-python src/train\_model.py
+python src/train_model.py
 ```
 
 The trained model and TF-IDF vectorizer are saved in the `models/` directory.
