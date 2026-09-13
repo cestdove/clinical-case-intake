@@ -60,3 +60,7 @@ The trained model and TF-IDF vectorizer are saved in the `models/` directory.
 ## Notebooks
 
 The `notebooks/` directory contains exploratory analysis and model evaluation notebooks, including error analysis and model interpretability.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
